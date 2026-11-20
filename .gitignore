@@ -1,0 +1,39 @@
+# LitNexus Git Ignore Specification
+# ==================================
+
+# Raw Binary Papers (PDFs should be hosted externally or downloaded on demand)
+02_raw_materials/PDF/*.pdf
+domains/**/02_raw_materials/PDF/*.pdf
+**/02_原文/PDF/*.pdf
+**/02_原文/原版PDF与图表页/*.pdf
+
+# Large Archive and Database Dumps (Single files > 50MB)
+04_archive/*.zip
+04_archive/*.sqlite
+domains/**/04_archive/*.zip
+domains/**/04_archive/*.sqlite
+**/04_存档/*.zip
+**/04_存档/*.sqlite
+*.sqlite.zip
+
+# Python & Environment Artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+.env
+
+# System & OS Artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.temp
+
+# IDE & Editor Configurations
+.vscode/
+.idea/
+*.swp
+*.swo

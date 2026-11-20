@@ -1,0 +1,29 @@
+# Domain Configuration Template
+# ==============================
+
+domain_metadata:
+  identifier: "domain_template"
+  title_en: "Domain Title in Academic English"
+  title_ja: "研究領域の学術的名称（日本語）"
+  maintainers: ["Author / Lab Member Name"]
+  created_at: "2026-11-20"
+
+search_criteria:
+  arxiv_categories:
+    - "cs.AI"
+    - "cs.RO"
+  venues:
+    - "RSS"
+    - "ICRA"
+    - "NeurIPS"
+  keywords_mandatory: []
+  keywords_optional: []
+  keywords_exclude: []
+
+triage_heuristics:
+  include_threshold: "Direct empirical or theoretical contributions to core domain mechanisms."
+  pending_threshold: "Adjacent methodologies, benchmark releases, or relevant survey articles."
+  exclude_threshold: "Peripheral applications, unverified opinion pieces, or out-of-scope hardware designs."
+
+storage:
+  cloud_storage_root: ""
